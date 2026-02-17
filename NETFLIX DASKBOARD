@@ -1,0 +1,132 @@
+
+# 🎬 Netflix Content Analytics Dashboard
+
+> A fully interactive data analytics dashboard built with pure HTML, CSS & Chart.js — no frameworks, no build tools, just open the file.
+
+![Dashboard Preview](https://img.shields.io/badge/Charts-6%20Visualizations-e50914?style=for-the-badge&logo=netflix&logoColor=white)
+![Data](https://img.shields.io/badge/Titles-494%20Analyzed-f5c518?style=for-the-badge)
+![Tech](https://img.shields.io/badge/Built%20With-Chart.js%20%7C%20HTML%20%7C%20CSS-00d4c8?style=for-the-badge)
+
+---
+
+## 📊 Dashboard Highlights
+
+| Metric | Value |
+|--------|-------|
+| Total Titles Analyzed | **494** |
+| Movies | **478 (96.8%)** |
+| TV Shows | **16 (3.2%)** |
+| Avg Movie Duration | **102.8 min** |
+| Co-Productions | **22.7%** |
+| Year Range | **1964 – 2021** |
+
+---
+
+## 🖥️ Live Preview
+
+👉 **[Open Dashboard →](./Netflix_Dashboard.html)** *(or visit GitHub Pages if deployed)*
+
+---
+
+## 📈 Visualizations Included
+
+| Chart | Type | Insight |
+|-------|------|---------|
+| **Content Added by Year** | Area Line | Netflix's rapid content growth, peaking in 2020 |
+| **Content Type Split** | Doughnut | Movie vs TV Show catalog composition |
+| **Top Genres** | Horizontal Bar | Dramas & International content dominate |
+| **Top Countries** | Custom Bar | US leads, strong global representation |
+| **Ratings Distribution** | Polar Area | Majority of content is TV-MA / R rated |
+| **Audience Segments** | Doughnut | 50%+ of catalog is for mature audiences |
+| **Movie Genre Radar** | Radar | Cross-genre overlap view for movies |
+
+---
+
+## 🗂️ Project Structure
+
+```
+netflix-analytics-dashboard/
+│
+├── Netflix_Dashboard.html   # 📊 Main dashboard (single file, self-contained)
+├── Netflix_data.csv         # 📁 Raw dataset (494 Netflix titles)
+└── README.md                # 📖 This file
+```
+
+---
+
+## 🚀 How to Run
+
+### Option 1: Open Locally
+```bash
+# Just open the file in any browser
+open Netflix_Dashboard.html       # macOS
+start Netflix_Dashboard.html      # Windows
+xdg-open Netflix_Dashboard.html  # Linux
+```
+
+### Option 2: Deploy to GitHub Pages
+1. Fork / clone this repository
+2. Go to **Settings → Pages**
+3. Set source to `main` branch, root `/`
+4. Your dashboard will be live at:
+   `https://<your-username>.github.io/<repo-name>/Netflix_Dashboard.html`
+
+---
+
+## 🔍 Key Insights
+
+- **2020 was peak year** — 122 titles released, likely driven by COVID streaming surge
+- **Content skews mature** — 50.4% of catalog is R/TV-MA rated
+- **US dominates** but global content is strong — India, UK, Nigeria, Philippines all well represented
+- **Drama is king** — 211 titles tagged as Dramas, often combined with Romance or International
+- **Co-productions rising** — 22.7% of titles involve multiple countries
+- **TV Shows underrepresented** — This snapshot is 96.8% movies, suggesting the dataset is movie-focused
+
+---
+
+## 🛠️ Tech Stack
+
+- **Chart.js 4.4.1** — All 6 interactive charts
+- **Pure HTML/CSS/JS** — Zero dependencies, zero build step
+- **Google Fonts** — Bebas Neue + DM Sans
+- **CSS Custom Properties** — Consistent theming
+- **CSS Animations** — Smooth KPI counters and bar reveals
+
+---
+
+## 📁 Dataset Columns
+
+| Column | Description |
+|--------|-------------|
+| `show_id` | Unique content identifier |
+| `type` | Movie or TV Show |
+| `title` | Content title |
+| `director` | Director / cast (note: field contains mixed data) |
+| `country` | Country of origin (comma-separated for co-productions) |
+| `release_year` | Year of release |
+| `rating` | Content rating (TV-MA, R, PG-13, etc.) |
+| `duration` | Runtime in minutes (Movies) or seasons (TV) |
+| `listed_in` | Genre tags (comma-separated, multi-genre) |
+
+---
+
+## 💡 Potential Extensions
+
+- [ ] Add search/filter by genre or country
+- [ ] Integrate live Netflix API data
+- [ ] Add Python-powered EDA notebook (`analysis.ipynb`)
+- [ ] Add D3.js world map for geographic distribution
+- [ ] Dark/light mode toggle
+
+---
+
+## 👤 About
+
+Built as a **Data Science Portfolio Project** demonstrating:
+- Exploratory Data Analysis (EDA) on real-world data
+- Data visualization best practices
+- Clean, publication-ready dashboard design
+
+---
+
+*Data source: Netflix catalog snapshot (2021). For educational and portfolio purposes only.*
